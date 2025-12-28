@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pesca - NewCooltura Informada",
+  title: "Pesca Chile - SERNAPESCA | NewCooltura Informada",
   description: "Oficinas SERNAPESCA, permisos de pesca, vedas, especies y calculadora de licencias",
+  keywords: ["pesca Chile", "SERNAPESCA", "permisos pesca", "vedas", "licencia pesca"],
+  openGraph: {
+    title: "Pesca Chile - NewCooltura Informada",
+    description: "Permisos, vedas y licencias de pesca",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
